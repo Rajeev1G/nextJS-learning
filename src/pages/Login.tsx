@@ -21,7 +21,7 @@ export default function Login() {
 
   return (
     <div>
-      {JSON.stringify(message)}
+      {message && JSON.stringify(message)}
       <input type="text" placeholder="email" ref={emailRef} />
       <input type="password" placeholder="password" ref={passRef} />
       <button onClick={handleLogin}>Login</button>

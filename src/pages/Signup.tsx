@@ -22,7 +22,7 @@ export default function Signup() {
   return (
     <div>
       <h1>Create a new user!!</h1>
-      {JSON.stringify(message)}
+      {message && JSON.stringify(message)}
       <input type="text" placeholder="email" ref={emailRef} />
       <input type="password" placeholder="password" ref={passRef} />
       <button onClick={handleLogin}>Login</button>
